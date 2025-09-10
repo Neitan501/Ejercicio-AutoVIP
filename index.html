@@ -1,0 +1,359 @@
+# Ejercicio-AutoVIP
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoVIP - Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="bi bi-car-front-fill"></i> AutoVIP
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ventas.html">Venta 0km</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ventas.html">Venta Usados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#contactoModal"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carrusel de imágenes -->
+    <div id="carouselAutos" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselAutos"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselAutos"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselAutos"
+          data-bs-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselAutos"
+          data-bs-slide-to="3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselAutos"
+          data-bs-slide-to="4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://via.placeholder.com/1200x500/333/fff?text=Auto+Premium+0km"
+            class="d-block w-100"
+            alt="Auto premium"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Vehículos Premium 0km</h5>
+            <p>Los mejores modelos con garantía oficial</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/1200x500/555/fff?text=Autos+Usados+Certificados"
+            class="d-block w-100"
+            alt="Autos usados"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Autos Usados Certificados</h5>
+            <p>Calidad garantizada con rigurosos controles</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/1200x500/777/fff?text=Autos+Deportivos"
+            class="d-block w-100"
+            alt="Autos deportivos"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Línea Deportiva</h5>
+            <p>Alto rendimiento y diseño vanguardista</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/1200x500/999/fff?text=SUVs+y+Camionetas"
+            class="d-block w-100"
+            alt="SUVs y camionetas"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>SUVs y Camionetas</h5>
+            <p>Espacio, confort y versatilidad</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/1200x500/bbb/fff?text=Ofertas+Especiales"
+            class="d-block w-100"
+            alt="Ofertas especiales"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ofertas Especiales</h5>
+            <p>Descuentos y planes de financiación exclusivos</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselAutos"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselAutos"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <!-- Sección de servicios -->
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2>Bienvenido a AUTOVIP</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Servicio: Venta de 0km -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">Venta de 0km</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Itaque, optio corporis quae nulla aspernatur in alias at numquam
+                rerum ea excepturi expedita tenetur assumenda voluptatibus
+                eveniet.
+              </p>
+              <a href="ventas.html" class="btn btn-primary">Ver autos</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio: Venta de usados -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">Venta de Usados</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Itaque, optio corporis quae nulla aspernatur in alias at numquam
+                rerum ea excepturi expedita tenetur assumenda voluptatibus
+                eveniet.
+              </p>
+              <a href="ventas.html" class="btn btn-primary">Ver autos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de trámites -->
+    <section class="tramites-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="mb-4">❌ Trámites</h2>
+            <p class="lead mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
+              optio corporis quae nulla aspernatur in alias at numquam rerum ea
+              excepturi expedita tenetur assumenda voluptatibus eveniet.
+            </p>
+
+            <div class="mt-4">
+              <a href="#" class="btn btn-outline-primary me-2">Ver trámites</a>
+              <a href="ventas.html" class="btn btn-outline-secondary me-2"
+                >Venta 0km</a
+              >
+              <a href="ventas.html" class="btn btn-outline-secondary"
+                >Venta Usados</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h5>AutoVIP</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
+              optio corporis quae nulla aspernatur.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h5>Enlaces</h5>
+            <ul class="list-unstyled">
+              <li><a href="ventas.html">Venta 0km</a></li>
+              <li><a href="ventas.html">Venta Usados</a></li>
+              <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactoModal"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contacto</h5>
+            <address>
+              <i class="bi bi-geo-alt-fill"></i> Av. Siempre Viva 742<br />
+              <i class="bi bi-telephone-fill"></i> (011) 1234-5678<br />
+              <i class="bi bi-envelope-fill"></i> info@autovip.com
+            </address>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center">
+          <p class="mb-0">Copyright © AutoVIP 2023</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal de Contacto -->
+    <div class="modal fade" id="contactoModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contacto</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="nombreContacto" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombreContacto"
+                  placeholder="Ingresar nombre completo..."
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="emailContacto" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailContacto"
+                  placeholder="Ingresar Email..."
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="mensajeContacto" class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="mensajeContacto"
+                  rows="3"
+                  placeholder="Ingresar mensaje..."
+                  required
+                ></textarea>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="newsletterCheck"
+                />
+                <label class="form-check-label" for="newsletterCheck">
+                  Todos los datos: Contacto
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-primary">
+              Enviar mensaje
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
