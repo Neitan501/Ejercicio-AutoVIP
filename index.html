@@ -1,27 +1,61 @@
-# Ejercicio-AutoVIP
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AutoVIP - Inicio</title>
+ <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .card i {
+      margin-right: 8px;
+      ;
+    }
+
+    .footer {
+      background-color: #111;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    .footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .border-top-orange {
+      border-top: 4px solid orange;
+    }
+
+    h1 span {
+      font-weight: bold;
+      color: #000;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>  
     
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
    
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
-    />
+ 
    
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
   <body>
    
+   
+     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <i class=" "></i> AutoVIP
@@ -60,8 +94,13 @@
         </div>
       </div>
     </nav>
+</div>
 
+ 
+ 
    <div id="carouselExampleCaptions" class="carousel slide">
+    
+ 
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="audi_1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="audi_2"></button>
@@ -70,12 +109,12 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="volvo_1"></button>
 
   </div>
+  
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="img/cars_home/audi_1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5>AUDI</h5>
       </div>
     </div>
     
@@ -83,8 +122,8 @@
     <div class="carousel-item">
       <img src="img/cars_home/audi_2.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5>AUDI</h5>
+ 
       </div>
     </div>
 
@@ -92,8 +131,8 @@
     <div class="carousel-item">
       <img src="img/cars_home/bentley_1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h5>BENTLEY</h5>
+         
       </div>
     </div>
 
@@ -101,22 +140,22 @@
        <div class="carousel-item">
       <img src="img/cars_home/bmw_1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>bentley_1</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5>BMW</h5>
+       
       </div>
     </div>
 
     <div class="carousel-item">
       <img src="img/cars_home/volvo_1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h5>VOLVO</h5>
+        
       </div>
     </div>
     
     
   </div>
-  </div>
+  
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -126,199 +165,86 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
-
-
-
-
-
+ 
  
 
-    <!-- Sección de servicios -->
-    <section class="container my-5">
-      <div class="row">
-        <div class="col-12 text-center mb-5">
-          <h2>Bienvenido a AUTOVIP</h2>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Servicio: Venta de 0km -->
-        <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="card-title">Venta de 0km</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Itaque, optio corporis quae nulla aspernatur in alias at numquam
-                rerum ea excepturi expedita tenetur assumenda voluptatibus
-                eveniet.
-              </p>
-              <a href="ventas.html" class="btn btn-primary">Ver autos</a>
-            </div>
-          </div>
-        </div>
 
-        <!-- Servicio: Venta de usados -->
-        <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="card-title">Venta de Usados</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Itaque, optio corporis quae nulla aspernatur in alias at numquam
-                rerum ea excepturi expedita tenetur assumenda voluptatibus
-                eveniet.
-              </p>
-              <a href="ventas.html" class="btn btn-primary">Ver autos</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Sección de trámites -->
-    <section class="tramites-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="mb-4">❌ Trámites</h2>
-            <p class="lead mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
-              optio corporis quae nulla aspernatur in alias at numquam rerum ea
-              excepturi expedita tenetur assumenda voluptatibus eveniet.
+     <footer class="footer border-top-orange"></footer>
+      
+  <div class="container text-center my-5">
+    <h1>Bienvenido a <span>AUTO<span class="fw-bold text-dark">VIP</span></span></h1>
+  </div>
+
+ 
+  <div class="container mb-5">
+    <div class="row g-4 justify-content-center">
+
+     
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-car"></i>Venta de 0km</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?
             </p>
-
-            <div class="mt-4">
-              <a href="#" class="btn btn-outline-primary me-2">Ver trámites</a>
-              <a href="ventas.html" class="btn btn-outline-secondary me-2"
-                >Venta 0km</a
-              >
-              <a href="ventas.html" class="btn btn-outline-secondary"
-                >Venta Usados</a
-              >
-            </div>
+            <a href="#" class="btn btn-light border">Ver autos</a>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Pie de página -->
-    <footer class="bg-dark text-white py-4 mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-3 mb-md-0">
-            <h5>AutoVIP</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
-              optio corporis quae nulla aspernatur.
+    
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-car-side"></i>Venta de Usados</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?
             </p>
+            <a href="#" class="btn btn-light border">Ver autos</a>
           </div>
-          <div class="col-md-4 mb-3 mb-md-0">
-            <h5>Enlaces</h5>
-            <ul class="list-unstyled">
-              <li><a href="ventas.html">Venta 0km</a></li>
-              <li><a href="ventas.html">Venta Usados</a></li>
-              <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-              <li>
-                <a
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#contactoModal"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Contacto</h5>
-            <address>
-              <i class="bi bi-geo-alt-fill"></i> Av. Siempre Viva 742<br />
-              <i class="bi bi-telephone-fill"></i> (011) 1234-5678<br />
-              <i class="bi bi-envelope-fill"></i> info@autovip.com
-            </address>
-          </div>
-        </div>
-        <hr />
-        <div class="text-center">
-          <p class="mb-0">Copyright © AutoVIP 2023</p>
         </div>
       </div>
-    </footer>
 
-    <!-- Modal de Contacto -->
-    <div class="modal fade" id="contactoModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Contacto</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+  
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-file-alt"></i>Trámites</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?
+            </p>
+            <a href="#" class="btn btn-light border">Ver trámites</a>
           </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="nombreContacto" class="form-label">Nombre</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nombreContacto"
-                  placeholder="Ingresar nombre completo..."
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="emailContacto" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="emailContacto"
-                  placeholder="Ingresar Email..."
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="mensajeContacto" class="form-label">Mensaje</label>
-                <textarea
-                  class="form-control"
-                  id="mensajeContacto"
-                  rows="3"
-                  placeholder="Ingresar mensaje..."
-                  required
-                ></textarea>
-              </div>
-              <div class="form-check mb-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="newsletterCheck"
-                />
-                <label class="form-check-label" for="newsletterCheck">
-                  Todos los datos: Contacto
-                </label>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Cerrar
-            </button>
-            <button type="button" class="btn btn-primary">
-              Enviar mensaje
-            </button>
-          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+ 
+  <footer class="footer border-top-orange">
+    <div class="container">
+      <div class="row text-center text-md-start align-items-center">
+        <div class="col-md-3 mb-3">
+          <h5 class="fw-bold">AUTOVIP</h5>
+        </div>
+        <div class="col-md-3 mb-3">
+          <p><a href="#">Venta 0km</a></p>
+          <p><a href="#">Venta Usados</a></p>
+        </div>
+        <div class="col-md-3 mb-3">
+          <p><a href="sobre-nosotros.html">Sobre Nosotros</a></p>
+          <p><a href="">Contacto</a></p>
+        </div>
+        <div class="col-md-3 mb-3 text-md-end">
+          <p>Copyright © AutoVIP <span class="text-info">2023</span></p>
         </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
