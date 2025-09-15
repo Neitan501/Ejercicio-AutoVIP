@@ -27,3 +27,31 @@ body {
         .star:hover {
             transform: scale(1.1);
         }
+.card i {
+  margin-right: 8px;
+}
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.border-top-orange {
+  border-top: 4px solid orange;
+}
+
+h1 span {
+  font-weight: bold;
+  color: #000;
+}
