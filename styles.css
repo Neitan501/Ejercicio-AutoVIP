@@ -19,3 +19,11 @@ body {
 .custom-footer span {
   color: #fff;
 }
+
+.star {
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .star:hover {
+            transform: scale(1.1);
+        }
