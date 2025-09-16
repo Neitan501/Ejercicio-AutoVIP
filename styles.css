@@ -20,12 +20,32 @@ body {
   color: #fff;
 }
 
-.star {
-            cursor: pointer;
-            transition: all 0.2s ease;
+        .rating {
+            border: none;
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+            flex-direction: row-reverse;
         }
-        .star:hover {
-            transform: scale(1.1);
+        
+        .rating input {
+            display: none;
+        }
+        
+        .rating label {
+            color: #ddd;
+            cursor: pointer;
+            font-size: 16px;
+            transition: color 0.2s ease;
+        }
+        
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: #ffc107;
+        }
+        
+        .rating input:checked ~ label {
+            color: #ffc107;
         }
 .card i {
   margin-right: 8px;
