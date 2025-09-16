@@ -20,33 +20,6 @@ body {
   color: #fff;
 }
 
-        .rating {
-            border: none;
-            padding: 0;
-            margin: 0;
-            display: inline-flex;
-            flex-direction: row-reverse;
-        }
-        
-        .rating input {
-            display: none;
-        }
-        
-        .rating label {
-            color: #ddd;
-            cursor: pointer;
-            font-size: 16px;
-            transition: color 0.2s ease;
-        }
-        
-        .rating label:hover,
-        .rating label:hover ~ label {
-            color: #ffc107;
-        }
-        
-        .rating input:checked ~ label {
-            color: #ffc107;
-        }
 .card i {
   margin-right: 8px;
 }
@@ -54,7 +27,6 @@ body {
 .footer {
   background-color: #000000;
   color: #fff;
-  padding: 10px 0;
 }
 
 .footer a {
@@ -79,4 +51,7 @@ h1 span {
   background-color: #fafafa;
   color: #fff;
   padding: 10px 0;
+}
+.content {
+  margin-bottom: 30px;
 }
