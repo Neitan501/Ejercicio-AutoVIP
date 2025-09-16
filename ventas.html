@@ -9,25 +9,24 @@
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<nav class="navbar bg-dark navbar-dark border-bottom border-warning">
-  <div class="container d-flex align-items-center justify-content-between">
-    <a class="navbar-brand" href="#">
-      <img src="img/automotora_vip_logo.png" alt="AUTOVIP" class="img-fluid" style="height:40px;">
-    </a>
-    <ul class="navbar-nav flex-row gap-3 ms-auto">
-      <li class="nav-item"><a class="nav-link active" href="#">Venta 0km</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Venta Usados</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Sobre Nosotros</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-    </ul>
-  </div>
-</nav>
-
+    <nav class="navbar bg-dark navbar-dark border-bottom border-warning">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="img/automotora_vip_logo.png" alt="AUTOVIP" class="img-fluid" style="height:40px;">
+            </a>
+            <ul class="navbar-nav flex-row gap-3 ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Venta 0km</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Venta Usados</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sobre Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="bg-warning" style="height: 4px;"></div>
     <div class="container-fluid mt-4 px-3">
         <div class="row mb-4">
             <div class="col-12 col-md-8 mb-2 mb-md-0">
-                <h1 class="display-6 fw-semibold ">Ventas</h1>
+                <h1 class="display-6 fw-semibold">Ventas</h1>
             </div>
             <div class="col-12 col-md-4">
                 <div class="text-md-end text-muted">
@@ -35,45 +34,67 @@
                 </div>
             </div>
         </div>
+        
         <div class="row">
             <div class="col-12 col-lg-3 mb-4">
                 <div class="card bg-light">
                     <div class="card-body">
                         <h5 class="card-title">Filtro</h5>
+                        
                         <div class="mb-3">
                             <label class="form-label">Año</label>
                             <select class="form-select">
                                 <option>Seleccionar...</option>
+                                <option>2023</option>
+                                <option>2022</option>
+                                <option>2021</option>
+                                <option>2020</option>
                             </select>
                         </div>
+                        
                         <div class="mb-3">
                             <label class="form-label">Marca</label>
                             <select class="form-select">
                                 <option>Seleccionar...</option>
+                                <option>Audi</option>
+                                <option>BMW</option>
+                                <option>Mercedes</option>
                             </select>
                         </div>
+                        
                         <div class="mb-3">
                             <label class="form-label">Modelo</label>
                             <select class="form-select">
                                 <option>Seleccionar...</option>
+                                <option>Q5</option>
+                                <option>Q7</option>
+                                <option>A6</option>
                             </select>
                         </div>
+ 
                         <div class="mb-3">
                             <label class="form-label">Estado</label>
                             <select class="form-select">
                                 <option>Seleccionar...</option>
+                                <option>Nuevo</option>
+                                <option>Usado</option>
                             </select>
                         </div>
+                        
                         <button class="btn btn-warning w-100 mb-3">
                             <i class="fas fa-search"></i> Filtrar
                         </button>
+                        
                         <button class="btn btn-outline-secondary w-100">
                             <i class="fas fa-dollar-sign"></i> Cambiar moneda
                         </button>
                     </div>
                 </div>
             </div>
+            
             <div class="col-12 col-lg-9">
+                
+                <!-- Audi Q5 -->
                 <div class="card mb-4">
                     <div class="row g-0">
                         <div class="col-12 col-md-4">
@@ -89,13 +110,22 @@
                                     <h3 class="card-title fw-bold mb-1">Audi Q5</h3>
                                     <div class="text-muted">
                                         2017 | USD 92.000
-                                        <span class="text-warning ms-2 star-rating" data-rating="5" data-car="q5">
-                                            <i class="fas fa-star star" data-star="1"></i>
-                                            <i class="fas fa-star star" data-star="2"></i>
-                                            <i class="fas fa-star star" data-star="3"></i>
-                                            <i class="fas fa-star star" data-star="4"></i>
-                                            <i class="fas fa-star star" data-star="5"></i>
-                                        </span>
+                                        <fieldset class="rating ms-2" role="radiogroup" aria-label="Calificación Audi Q5">
+                                            <input type="radio" id="q5-5" name="q5-rating" value="5" checked>
+                                            <label for="q5-5" class="fa-solid fa-star"></label>
+                                            
+                                            <input type="radio" id="q5-4" name="q5-rating" value="4">
+                                            <label for="q5-4" class="fa-solid fa-star"></label>
+                                            
+                                            <input type="radio" id="q5-3" name="q5-rating" value="3">
+                                            <label for="q5-3" class="fa-solid fa-star"></label>
+                                            
+                                            <input type="radio" id="q5-2" name="q5-rating" value="2">
+                                            <label for="q5-2" class="fa-solid fa-star"></label>
+                                            
+                                            <input type="radio" id="q5-1" name="q5-rating" value="1">
+                                            <label for="q5-1" class="fa-solid fa-star"></label>
+                                        </fieldset>
                                     </div>
                                 </div>
                                 
@@ -121,6 +151,8 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Audi Q7 -->
                 <div class="card mb-4">
                     <div class="row g-0">
                         <div class="col-12 col-md-4">
@@ -133,13 +165,22 @@
                                     <h3 class="card-title fw-bold mb-1">Audi Q7</h3>
                                     <div class="text-muted">
                                         2017 | USD 110.000
-                                        <span class="text-warning ms-2 star-rating" data-rating="3" data-car="q7">
-                                            <i class="fas fa-star star" data-star="1"></i>
-                                            <i class="fas fa-star star" data-star="2"></i>
-                                            <i class="fas fa-star star" data-star="3"></i>
-                                            <i class="far fa-star star" data-star="4"></i>
-                                            <i class="far fa-star star" data-star="5"></i>
-                                        </span>
+                                        <fieldset class="rating ms-2" role="radiogroup" aria-label="Calificación Audi Q7">
+                                            <input type="radio" id="q7-5" name="q7-rating" value="5">
+                                            <label for="q7-5" class="fa-solid fa-star"></label>
+                                            
+                                            <input type="radio" id="q7-4" name="q7-rating" value="4">
+                                            <label for="q7-4" class="fa-solid fa-star"></label>
+                                            
+                                            <input type="radio" id="q7-3" name="q7-rating" value="3" checked>
+                                            <label for="q7-3" class="fa-solid fa-star"></label>
+                                            
+                                            <input type="radio" id="q7-2" name="q7-rating" value="2">
+                                            <label for="q7-2" class="fa-solid fa-star"></label>
+                                            
+                                            <input type="radio" id="q7-1" name="q7-rating" value="1">
+                                            <label for="q7-1" class="fa-solid fa-star"></label>
+                                        </fieldset>
                                     </div>
                                 </div>
                                 
@@ -165,6 +206,8 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Audi A6 Quattro -->
                 <div class="card mb-4">
                     <div class="row g-0">
                         <div class="col-12 col-md-4">
@@ -177,13 +220,22 @@
                                     <h3 class="card-title fw-bold mb-1">Audi A6 Quattro</h3>
                                     <div class="text-muted">
                                         2016 | USD 98.000
-                                        <span class="text-warning ms-2 star-rating" data-rating="4" data-car="a6">
-                                            <i class="fas fa-star star" data-star="1"></i>
-                                            <i class="fas fa-star star" data-star="2"></i>
-                                            <i class="fas fa-star star" data-star="3"></i>
-                                            <i class="fas fa-star star" data-star="4"></i>
-                                            <i class="far fa-star star" data-star="5"></i>
-                                        </span>
+                                        <fieldset class="rating ms-2" role="radiogroup" aria-label="Calificación Audi A6 Quattro">
+                                            <input type="radio" id="a6-5" name="a6-rating" value="5">
+                                            <label for="a6-5" class="fa-solid fa-star"></label>
+                                            
+                                            <input type="radio" id="a6-4" name="a6-rating" value="4" checked>
+                                            <label for="a6-4" class="fa-solid fa-star"></label>
+                                            
+                                            <input type="radio" id="a6-3" name="a6-rating" value="3">
+                                            <label for="a6-3" class="fa-solid fa-star"></label>
+                                            
+                                            <input type="radio" id="a6-2" name="a6-rating" value="2">
+                                            <label for="a6-2" class="fa-solid fa-star"></label>
+                                            
+                                            <input type="radio" id="a6-1" name="a6-rating" value="1">
+                                            <label for="a6-1" class="fa-solid fa-star"></label>
+                                        </fieldset>
                                     </div>
                                 </div>
                                 
@@ -213,59 +265,6 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const stars = document.querySelectorAll('.star');
-            stars.forEach(star => {
-                star.addEventListener('click', function() {
-                    const starContainer = this.closest('.star-rating');
-                    const carName = starContainer.getAttribute('data-car');
-                    const clickedRating = parseInt(this.getAttribute('data-star'));
-                    starContainer.setAttribute('data-rating', clickedRating);
-                    const carStars = starContainer.querySelectorAll('.star');
-                    carStars.forEach((s, index) => {
-                        if (index < clickedRating) {
-                            s.className = 'fas fa-star star';
-                        } else {
-                            s.className = 'far fa-star star';
-                        }
-                    });
-                    console.log(`Rating para ${carName}: ${clickedRating} estrellas`);
-                });
-                star.addEventListener('mouseenter', function() {
-                    const starContainer = this.closest('.star-rating');
-                    const hoverRating = parseInt(this.getAttribute('data-star'));
-                    const carStars = starContainer.querySelectorAll('.star');
 
-                    carStars.forEach((s, index) => {
-                        if (index < hoverRating) {
-                            s.style.color = '#ffc107';
-                            s.style.opacity = '1';
-                        } else {
-                            s.style.color = '#e0e0e0';
-                            s.style.opacity = '0.5';
-                        }
-                    });
-                });
-
-                star.addEventListener('mouseleave', function() {
-                    const starContainer = this.closest('.star-rating');
-                    const originalRating = parseInt(starContainer.getAttribute('data-rating'));
-                    const carStars = starContainer.querySelectorAll('.star');
-                    carStars.forEach((s, index) => {
-                        s.style.color = '';
-                        s.style.opacity = '';
-                        
-                        if (index < originalRating) {
-                            s.className = 'fas fa-star star';
-                        } else {
-                            s.className = 'far fa-star star';
-                        }
-                    });
-                });
-            });
-        });
-    </script>
 </body>
 </html>
