@@ -1,20 +1,16 @@
-/* Fondo general de la página */
 body {
   background-color: #f8f9fa;
 }
 
-/* Línea naranja bajo la barra de navegación */
 .navbar {
   border-bottom: 5px solid orange;
 }
 
-/* Footer: línea naranja arriba y fondo oscuro */
 .custom-footer {
   border-top: 5px solid orange;
   background: #181818;
 }
 
-/* Opcional: mejora el color de los textos del footer */
 .custom-footer div,
 .custom-footer span {
   color: #fff;
